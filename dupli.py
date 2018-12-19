@@ -23,7 +23,7 @@ class Filter():
             li = list(set(self.result))
             li1 = []
             for i,j,k in li:
-                z = str(i) + "_" + str(j) + "_" + str(k)
+                z = str(i) + "_" + str(j) + "_" + str(k).strip().replace("(","（").replace(")","）").replace(" ","")
                 li1.append(z)
             li1.append(str(dtf.datetime.now())[:-7])
             content = "\n".join(li1)
