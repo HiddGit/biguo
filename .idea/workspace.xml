@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="823a505f-7edb-4cd6-8160-01ab5d1c8cce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/toolsCode/photoToExcel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toolsCode/photoToQinNiu.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toolsCode/toolsForExcel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dupli.py" beforeDir="false" afterPath="$PROJECT_DIR$/dupli.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainCode/needPaer" beforeDir="false" afterPath="$PROJECT_DIR$/mainCode/needPaer" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainCode/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainCode/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainCode/testMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainCode/testMain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainCode/toolsForExcel.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainCode/toolsForExcel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainCode/zhitiku1218.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainCode/zhitiku1218.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paperlist" beforeDir="false" afterPath="$PROJECT_DIR$/paperlist2" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +31,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gitignore" value="3" />
+          <entry key="gitignore" value="4" />
           <entry key="needPaer" value="7" />
           <entry key="paperlist" value="3" />
           <entry key="paperlist2" value="1" />
@@ -51,7 +41,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="14" />
+          <entry key="PLAIN_TEXT" value="15" />
           <entry key="Profiler Session" value="1" />
           <entry key="Python" value="36" />
         </counts>
@@ -71,7 +61,17 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -115,10 +115,10 @@
         <option value="$PROJECT_DIR$/mainCode/needPaer" />
         <option value="$PROJECT_DIR$/toolsCode/photoToExcel.py" />
         <option value="$PROJECT_DIR$/mainCode/testMain.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/toolsCode/photoToQinNiu.py" />
         <option value="$PROJECT_DIR$/mainCode/zhitiku1218.py" />
         <option value="$PROJECT_DIR$/mainCode/toolsForExcel.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -357,6 +357,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="23" width="1384" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18093093" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -577,13 +578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/toolsCode/photoToQinNiu.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5">
@@ -604,6 +598,13 @@
             <element signature="e#3346#3527#0" />
             <element signature="e#3893#3917#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
         </state>
       </provider>
     </entry>
