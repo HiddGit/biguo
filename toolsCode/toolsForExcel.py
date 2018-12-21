@@ -7,21 +7,6 @@ import re
 import time
 import requests
 
-
-
-def generatePname():
-
-
-    pName = str("{:.7f}".format(time.time()))
-    a = chr(random.randrange(65, 65 + 26))
-    b = chr(random.randrange(65, 65 + 26))
-    c = chr(random.randrange(65, 65 + 26))
-    d = chr(random.randrange(65, 65 + 26))
-    pName = pName.replace(".", a + b+c+d)
-
-    return  pName
-
-# print(generatePname())
 def toSaveImg(oneArry,sPath):
     for n in range(2, len(oneArry)):
         if oneArry[n] == "":
@@ -47,9 +32,10 @@ def changeSrc(srcStr,pPath):
         # srcStr = re.sub(r"alt=[\"\'].*?[\"\']","",srcStr)
         needpath = re.findall(r"<img.*?src=[\"\'](.*?)[\"\'].*?>",srcStr)
         for m in needpath:
-            newName = generatePname()
-
-            newName = newName + ".jpg"
+            timer = str(int(time.time()))
+            achr = chr(random.randrange(65, 65 + 26))
+            bchr = chr(random.randrange(65, 65 + 26))
+            newName = timer +achr+bchr+ "_" + re.findall(r".*/(.*\..*)", m)[0]
             newPath = "http://img.biguotk.com/" + newName
             # print(" old",srcStr)
             downPhoto("http://www.edu-edu.com/exam-admin/home/my/admin/real/questionbank/question/attaches/"+m, pPath + newName)
@@ -72,14 +58,13 @@ def downPhoto(url,savePath):
         "Accept-Encoding": "gzip, deflate",
         "Accept-Language": "zh-CN,zh;q=0.9",
         "Connection":"keep-alive",
-        "Cookie": "JSESSIONID=A9D22FF2D797F13FFB1C2E8F24E7D979; JSESSIONID=30E3179DE363106BFCAF15821B73692E; JSESSIONID=E2DF64A8EAF57AE7741B074E5D02E501; service='http://www.edu-edu.com/sale/cas_security_check'; org.springframework.mobile.device.site.CookieSitePreferenceRepository.SITE_PREFERENCE=MOBILE; _tenant=default; JSESSIONID=4B20788FF7BE9377340DCBAE12238C03; JSESSIONID=8EDF39E271820A9B18F0F966D75D784B; JSESSIONID=8AC7EB6BBE0BCCDA935C47846DAF6BCC",
+        "Cookie": "JSESSIONID=976B304A7C71BE1746C9E78CF3A26557; _tenant=default; service='http://www.edu-edu.com/exam-admin/cas_security_check'; referer='http://www.edu-edu.com/cas/web/login?service=http%3A%2F%2Fwww.edu-edu.com%2Fexam-admin%2Fcas_security_check&_tenant=default'"
     }
     res = s.get(url,headers=headers)
     with open(savePath,mode="wb") as f :
         f.write(res.content)
         f.flush()
     # print("====ok save",savePath)
-    # print("down over",savePath)
     return
 
 

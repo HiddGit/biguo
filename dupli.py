@@ -29,7 +29,7 @@ class Filter():
             content = "\n".join(li1)
             cs.close()
             self.db.close()
-            with open("paperlist","w",encoding="utf8") as f:
+            with open("paperlist2","w",encoding="utf8") as f:
                 f.write(content)
                 f.flush()
         except Exception as e:
@@ -52,10 +52,10 @@ class Filter():
 
     def check(self):
         ntime = dtf.datetime.now()
-        if not os.path.exists("./paperlist"):
+        if not os.path.exists("./paperlist2"):
             li = self.create_list()
         else:
-            with open("./paperlist","r",encoding="utf8") as f:
+            with open("./paperlist2","r",encoding="utf8") as f:
                 li = f.readlines()
             if len(li) > 0:
                 st = li[-1]
